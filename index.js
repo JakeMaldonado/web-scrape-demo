@@ -7,9 +7,7 @@ const rp = require('request-promise');
 // transform is what we will do with our result html - we will load the html to cheerio then return it
 const options = {
     uri: 'http://www.laughfactory.com/jokes/clean-jokes',
-    transform: function (body) {
-      return cheerio.load(body);
-    }
+    transform: body => cheerio.load(body)
   };
 
 // request is passed our options
