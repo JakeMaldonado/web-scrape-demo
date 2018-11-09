@@ -12,7 +12,7 @@ const options = {
     }
   };
 
-// request is passed a url
+// request is passed our options
 rp.get(options).then($ => {
     // we set an empty array where we will store our jokes
     var jokeArr = [];
