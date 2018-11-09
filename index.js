@@ -13,7 +13,7 @@ const options = {
 // request is passed our options
 rp.get(options).then($ => {
     // we set an empty array where we will store our jokes
-    var jokeArr = [];
+    let jokeArr = [];
 
     // $ is cheerio loaded with our html -- we can now manipulate it and parse data we want
     // first we find all <div>'s with the class="jokes"
