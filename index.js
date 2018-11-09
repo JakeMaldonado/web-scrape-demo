@@ -34,7 +34,7 @@ rp.get(options).then($ => {
 
     // the text is all screwed up! lets fix it up
     jokeArr = jokeArr.map((joke) => {
-        // since there is a lot of white and new lines let's split the text by new lines then trim it then rejoin it all
+        // since there is a lot of white space and new lines let's split the text by new lines then trim it then rejoin it all
         // we spread the joke object then replace the text with the clean string
         return { 
             ...joke, 
